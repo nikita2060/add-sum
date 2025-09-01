@@ -17,13 +17,14 @@ export default function App() {
   return (
     <div>
       <input
+        id="input"
         type="text"
         placeholder="Enter numbers separated by comma"
         value={numbers}
         onChange={(e) => setNumbers(e.target.value)}
       />
-      <button onClick={handleSum}>Sum</button>
-      {sum !== null && <p>Result: {sum}</p>}
+      <button id="sum"onClick={handleSum}>Sum</button>
+      <p id ="result">Result: {sum}</p>
     </div>
   );
 }
